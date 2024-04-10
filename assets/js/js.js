@@ -1,15 +1,10 @@
-let nome = prompt("Digite seu nome");
-let idade =  parseInt(prompt("Digite sua idade"));
-let sexo = prompt('Digite M para masculino ou F para feminino' )
+/* seleções */
+const nome = document.querySelector('[nome]');
+const curso = document.querySelector('[curso]');
 
-if(sexo.toLowerCase() === 'm'){
-    if (idade < 18){
-        document.write(`${nome}, você escapou!`);
-    } else if(idade === 18){
-        document.write(`${nome}, deve servir ao TG`);
-    }else {
-        document.write(`${nome}, deve ter servido ao TG`);
-    }    
-}else{
-    document.write(`${nome}, você é Menina.`);
-}
+/* uso das seleções */
+
+nome.innerText = prompt('Qual seu nome?');
+let nome_curso = prompt('Qual seu curso?');
+
+curso.innerHTML = `<div style ="background-color: #456">${nome_curso}</div>`;
