@@ -8,48 +8,56 @@
 </head>
 <body>
     <div class="form">
-        <form action="" method="">
+        <form>
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <div dados_pessoais>
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input id="nome" type="text" value="Erico">
-                    </div>
-                    <div>
-                        <label for="data_nascimento">Data de Nascimento</label>
-                        <input type="date">
-                    </div>
-                    <div>
-                        <label for="genero">Sexo
-                            <select name="genero" id="genero">
-                                <option value="M">M</option>
-                                <option value="F">F</option>
-                                <hr>
-                                <option value="N">Prefiro não Informar</option>
-                            </select>
-                        </label> 
+                <div>
+                    <div dados_pessoais>
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input name="nome" id="nome" type="text" placeholder="Coloque o seu nome">
+                        </div>
+                        <div>
+                            <label for="genero">Sexo
+                                <select name="genero" id="genero">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Feminino</option>
+                                    <hr>
+                                    <option value="N">Prefiro não Informar</option>
+                                </select>
+                            </label> 
+                        </div>
+                    </div> 
+                    <div dados_pessoais>
+                        <div>
+                            <label for="email">e-mail</label>
+                            <input id="email" name="email" type="email" placeholder="@servidor">
+                        </div>
+                        <div>
+                            <label for="data_nascimento">Data de Nascimento</label>
+                            <input id="data" type="date" name="data_nascimento">
+                        </div>
                     </div>
                 </div>
                 <fieldset>  
                     <legend>Filiação</legend>
                     <div>
                         <label for="nome_pai">Pai</label>
-                        <input id="nome_pai" type="text">
+                        <input id="nome_pai" name="nome_pai" type="text">
                     </div>
                     <div>
                         <label for="nome_mae">Mãe</label>
-                        <input id="nome_mae" type="text">
+                        <input id="nome_mae" name="nome_mae" type="text">
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Endereço</legend>
                     <div>
                         <label for="cep">CEP</label>
-                        <input type="text" id="cep">
+                        <input type="text" name="cep" id="cep">
                     </div>
                     <div>
-                        <label for="tp_logradouro">Tipo de Logradouro</label>
+                        <label for="tp_logradouro">Tipo</label>
                         <select id="tp_logradouro" name="tp_logradouro">
                             <option value="Avenida">Avenida</option>
                             <option value="Rua">Rua</option>
@@ -58,13 +66,13 @@
                             <option value="Localidade">Localidade</option>
                         </select>
                         <label for="logradouro">Logradouro</label>
-                        <input id="logradouro" type="text">
-                        <label for="numero_endereco">Numero</label>
-                        <input id="numero_endereco" type="text">
+                        <input id="logradouro" name="logradouro" type="text">
+                        <label for="numero_endereco">Nº</label>
+                        <input id="numero_endereco" name="numero_endereco" type="text">
                     </div>
                     <div>
                         <label for="bairro">Bairro</label>
-                        <input id="bairro" type="text">
+                        <input id="bairro" name="bairro" type="text">
                         <label for="estado">Estado</label>
                         <select name="estado" id="estado">
                             <optgroup label="Região Norte">
@@ -106,14 +114,18 @@
                             </optgroup>
                         </select>
                         <label for="cidade">Cidade</label>
-                        <input id="cidade" type="text">
+                        <input id="cidade" name="cidade" type="text">
+                    </div>
+                    <div>
+                        <label for="fone">Telefone</label>
+                        <input id="fone"name="fome" type="tel">
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Documentos</legend>
                 </fieldset>
             </fieldset>
-            <input type="button" value="Enviar">
+            <input id="submit" type="submit" value="Enviar">
         </form>
 
         <div js_nome>
