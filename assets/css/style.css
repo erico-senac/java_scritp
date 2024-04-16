@@ -80,3 +80,14 @@ form > fieldset{
 .form input[id="submit"]{
     width: 8rem;
 }
+.form button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;    
+}
+span{
+    font-family: var(--fonte-Roboto-Condensed);
+    font-weight: 900;
+    font-size: 1.568rem;
+    color: #d61;
+}

@@ -1,8 +1,18 @@
 /* seleções */
-const nome = document.querySelector('#nome').value;
-const tp_logradouro = document.querySelector('#tp_logradouro').value;
-const logradouro = document.querySelector('#logradouro').value;
-const numero = document.querySelector('#numero_endereco').value;
+const nome = document.querySelector('#nome');
+const tp_logradouro = document.querySelector('#tp_logradouro');
+const logradouro = document.querySelector('#logradouro');
+const numero = document.querySelector('#numero_endereco');
 const js_nome = document.querySelector('[js_nome]');
 
-js_nome.innerHTML = `<p>Olá eu me chamo <span>${nome.value}</span></p>`;
+function pegar_e_imprimir(){
+    if(nome.value != ""){
+        js_nome.innerHTML = `<p>Olá eu me chamo <span>${nome.value}</span>
+        morro em <span>${tp_logradouro.value}</span> <span>${logradouro.value}</span>,
+        <span>${numero.value}</span>
+        </p>`;
+    }
+}
+
+const botao_enviar = document.getElementById('submit');
+botao_enviar.addEventListener('click',pegar_e_imprimir);
