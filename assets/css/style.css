@@ -91,3 +91,6 @@ span{
     font-size: 1.568rem;
     color: #d61;
 }
+div[js_nome]{
+    background: linear-gradient(to left, #ad6 0%, #fa8 60%);
+}
